@@ -1,0 +1,32 @@
+.arriba{
+
+ /* Redondear bordes para que se vea bonito*/
+ border-bottom-left-radius: 20px; 
+ border-bottom-right-radius: 20px; 
+
+/* Ajusta la altura de la toolbar */
+height: 145px; 
+padding-top: 0; 
+padding-bottom: 20px; 
+};
+
+
+
+.textoinicio{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+};
+
+.custom-button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+};
+
+.subtituloinicio{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+};
