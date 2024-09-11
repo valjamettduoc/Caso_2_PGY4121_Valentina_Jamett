@@ -1,13 +1,13 @@
-.arriba{
+ion-toolbar{
+/* Ajusta la altura de la toolbar */
+--height: 145px; 
+--padding-top: 0; 
+--padding-bottom: 30px; 
 
  /* Redondear bordes para que se vea bonito*/
  border-bottom-left-radius: 20px; 
- border-bottom-right-radius: 20px; 
+ border-bottom-right-radius: 20px;
 
-/* Ajusta la altura de la toolbar */
-height: 145px; 
-padding-top: 0; 
-padding-bottom: 20px; 
 };
 
 
@@ -31,8 +31,3 @@ padding-bottom: 20px;
     align-items: start; 
 };
 
-.inputs{
-    margin-top: 40px; 
-    justify-content: center;
-    align-items: center; 
-};
