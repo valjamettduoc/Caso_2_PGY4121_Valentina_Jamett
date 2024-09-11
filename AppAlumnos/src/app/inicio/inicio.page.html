@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar class="arriba" color="primary">
+  <ion-toolbar class="arriba" color="primary" style="--box-shadow: none;">
 
       <ion-buttons class="custom-button">
       <ion-button (click)="redireccionPagina()">
@@ -19,25 +19,29 @@
 
 <ion-content [fullscreen]="true">
 
-    <form (ngSubmit)="registro()">
+    <form (ngSubmit)="registro()" class="inputs">
       <ion-item>
-        <ion-label position="floating">Nombre</ion-label>
-        <ion-input [(ngModel)]="nombre" name="nombre" required></ion-input>
+        <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
+        <ion-input placeholder="Nombre" [(ngModel)]="nombre" name="nombre" required></ion-input>
       </ion-item>
       
       <ion-item>
-        <ion-label position="floating">Apellido</ion-label>
-        <ion-input [(ngModel)]="apellido" name="lastName" required></ion-input>
+        <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
+        <ion-input  placeholder="Apellido" 
+        [(ngModel)]="apellido" 
+        [clearInput]="true"
+        name="apellido" required>
+      </ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label position="floating">Correo</ion-label>
-        <ion-input type="email" [(ngModel)]="correo" name="correo" required></ion-input>
+        <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
+        <ion-input placeholder="Correo" type="correo" [(ngModel)]="correo" name="correo" required></ion-input>
       </ion-item>
   
       <ion-item>
-        <ion-label position="floating">Contraseña</ion-label>
-        <ion-input type="password" [(ngModel)]="contra" name="contra" required></ion-input>
+        <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
+        <ion-input placeholder="Contraseña" type="password" [(ngModel)]="contra" name="contra" required></ion-input>
       </ion-item>
 
       </form>
