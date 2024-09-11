@@ -10,13 +10,16 @@ import { Router } from '@angular/router';
 })
 export class InicioPage implements OnInit {
 
+
   constructor( private router: Router) { }
 
   redireccionPagina() {
-    this.router.navigate(['/']); // Cambia '/other-page' al path de la página destino
+    this.router.navigate(['/main']); // Cambia '/other-page' al path de la página destino
   }
 
   ngOnInit() {
   }
 
 }
+
+
