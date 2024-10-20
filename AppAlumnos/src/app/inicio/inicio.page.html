@@ -17,34 +17,34 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
-    <div>
-    <form (ngSubmit)="registro()" >
-        <ion-item>
-          <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
-          <ion-input placeholder="Nombre" [clearInput]="true" [(ngModel)]="nombre" name="nombre" required></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
-          <ion-input  placeholder="Apellido" [clearInput]="true" [(ngModel)]="apellido" name="apellido" required></ion-input>
-        </ion-item>
-     
-        <ion-item>
-          <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
-          <ion-input placeholder="Correo" type="email" [clearInput]="true" [(ngModel)]="correo" name="correo" required></ion-input>
-        </ion-item>
-      
+  <div class="form-container">
+      <form (ngSubmit)="registro()">
+          <ion-item>
+              <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
+              <ion-input placeholder="Nombre" [clearInput]="true" [(ngModel)]="nombre" name="nombre" required></ion-input>
+          </ion-item>
 
-        <ion-item>
-          <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
-          <ion-input placeholder="Contraseña" type="password" [(ngModel)]="contra" name="contra" required></ion-input>
-        </ion-item>
+          <ion-item>
+              <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
+              <ion-input placeholder="Apellido" [clearInput]="true" [(ngModel)]="apellido" name="apellido" required></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
+              <ion-input placeholder="Correo" type="email" [clearInput]="true" [(ngModel)]="correo" name="correo" required></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-icon aria-hidden="true" name="airplane" slot="start"></ion-icon>
+              <ion-input placeholder="Contraseña" type="password" [(ngModel)]="contra" name="contra" required></ion-input>
+          </ion-item>
+
+          <ion-button expand="block" fill="clear" shape="round">
+              Click me
+          </ion-button>
       </form>
-
-      <ion-button  expand="block" fill="clear" shape="round">
-        Click me
-      </ion-button>
-
-    </div>
+  </div>
 </ion-content>
+
