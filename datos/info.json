@@ -1,0 +1,45 @@
+{
+  "alumnos": [
+    {
+      "nombre": "Juanito",
+      "apellido": "Perez",
+      "rut": "21106777-K",
+      "email": "juanitop@gmail.com",
+      "password": "holamundo123",
+      "carrera": "Ingeniería en Informática",
+      "isactive": true,
+      "id": "09d2"
+    },
+    {
+      "id": "e714",
+      "nombre": "aaa",
+      "apellido": "bbb",
+      "rut": "2222222-K",
+      "email": "aaa@gmail.com",
+      "password": "aaaa123",
+      "carrera": "eeeee",
+      "isactive": true
+    },
+    {
+      "id": "25f5",
+      "nombre": "eee",
+      "apellido": "bbbbb",
+      "rut": "2222222-9",
+      "email": "aaaaa@gmail.com",
+      "password": "aaa123",
+      "carrera": "Ingeniería en Informática",
+      "isactive": true
+    }
+  ],
+  "asignaturas": [
+    {
+      "seccion": "005D",
+      "nombreasignatura": "Programación Web",
+      "descripcion": " El programa de la asignatura pretende introducir al alumno al mundo de la programación Web.",
+      "imagen": "src/assets/asignaturas/web.png",
+      "profesor": "Raul Contreras",
+      "fecha": "2024-10-26",
+      "id": "4c04"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Listado de Asignaturas -->
+  <ion-list *ngIf="asignaturas.length > 0">
+    <ion-item *ngFor="let asignatura of asignaturas">
+      <ion-thumbnail slot="start">
+        <img [src]="asignatura.imagen">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ asignatura.nombreasignatura }}</h2>
+        <p>{{ asignatura.descripcion }}</p>
+        <p><strong>Profesor:</strong> {{ asignatura.profesor }}</p>
+        <p><strong>Fecha:</strong> {{ asignatura.fecha | date: 'longDate' }}</p>
+      </ion-label>
+      <!-- Botón para registrarse en la clase -->
+      <ion-button (click)="registrarseClase(asignatura)" color="secondary" expand="block">
+        Registrarse
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <!-- Mostrar el QR generado -->
+  <div *ngIf="qrCode">
+    <h3>Tu código QR para la clase:</h3>
+    <img [src]="qrCode" alt="Código QR">
+  </div>
+
+  <!-- Mostrar un mensaje si no hay asignaturas disponibles -->
+  <div *ngIf="asignaturas.length === 0">
+    <p>No hay asignaturas disponibles en este momento.</p>
+  </div>
+</ion-content>
+
+  <app-explore-container name="Tab 2 page"></app-explore-container>
+</ion-content>
