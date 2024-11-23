@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Configurar Foto de Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Foto de Perfil -->
+  <div style="text-align: center">
+    <img
+      *ngIf="imageSrc"
+      [src]="imageSrc"
+      class="foto-de-perfil"
+      style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover"
+    />
+  </div>
+
+  <!-- Boton Actualizar Foto -->
+  <div style="text-align: center">
+    <ion-button (click)="fileInput.click()" shape="round">
+      <ion-icon slot="start" name="camera-outline"></ion-icon>
+      Selecciona Foto de Perfil
+    </ion-button>
+    <input
+      type="file"
+      #fileInput
+      (change)="onFileChange($event)"
+      accept="image/*"
+      style="display: none"
+    />
+  </div>
+
+  <!-- Formulario Datos -->
+  <form>
+    <ion-item>
+      <ion-input type="text" name="rut" label="Ingrese Rut"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" name="nombre" label="Ingrese Nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        type="text"
+        name="apellido"
+        label="Ingrese Apellido"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        type="password"
+        name="contraseña"
+        label="Ingrese Contraseña"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        type="email"
+        name="email"
+        label="Ingrese Correo Electrónico"
+      ></ion-input>
+    </ion-item>
+  </form>
+
+  <div style="text-align: center">
+    <ion-button (click)="actualizarPerfil()" shape="round" color="warning">
+      Actualizar
+    </ion-button>
+  </div>
+</ion-content>

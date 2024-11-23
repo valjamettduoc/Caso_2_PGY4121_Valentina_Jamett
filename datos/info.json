@@ -1,0 +1,24 @@
+{
+  "alumnos": [
+    {
+      "id": "5c90",
+      "nombre": "Juanito",
+      "apellido": "Perez",
+      "rut": "34666999-6",
+      "email": "juanperez@email.com",
+      "password": "holasoyjuanperez",
+      "isactive": true
+    }
+  ],
+  "asignaturas": [
+    {
+      "seccion": "005D",
+      "nombreasignatura": "Programación Web",
+      "descripcion": " El programa de la asignatura pretende introducir al alumno al mundo de la programación Web.",
+      "imagen": "src/assets/asignaturas/web.png",
+      "profesor": "Raul Contreras",
+      "fecha": "2024-10-26",
+      "id": "4c04"
+    }
+  ]
+}
