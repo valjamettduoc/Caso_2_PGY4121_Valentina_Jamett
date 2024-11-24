@@ -12,13 +12,25 @@
   ],
   "asignaturas": [
     {
-      "seccion": "005D",
-      "nombreasignatura": "Programación Web",
-      "descripcion": " El programa de la asignatura pretende introducir al alumno al mundo de la programación Web.",
-      "imagen": "src/assets/asignaturas/web.png",
-      "profesor": "Raul Contreras",
-      "fecha": "2024-10-26",
-      "id": "4c04"
+      "id": "1",
+      "nombre": "Arquitectura de Software",
+      "profesor": "Cristian Lazcano"
+    },
+    {
+      "id": "2",
+      "nombre": "Estadistica Descriptiva",
+      "profesor": "Carla Manziya"
+    },
+    {
+      "id": "3",
+      "nombre": "Etica Profecional",
+      "profesor": "Divia Alarcon"
+    },
+    {
+      "id": "4",
+      "nombre": "Programacion de Aplicaciones Moviles",
+      "profesor": "Viviana Poblete"
     }
   ]
 }
+

@@ -35,6 +35,18 @@ const routes: Routes = [
     path: 'configuracion-perfil',
     loadChildren: () => import('./configuracion-perfil/configuracion-perfil.module').then( m => m.ConfiguracionPerfilPageModule)
   },
+  {
+    path: 'asignaturas',
+    loadChildren: () => import('./asignaturas/asignaturas.module').then( m => m.AsignaturasPageModule)
+  },
+  {
+    path: 'detalle-alumno',
+    loadChildren: () => import('./detalle-alumno/detalle-alumno.module').then( m => m.DetalleAlumnoPageModule)
+  },
+  {
+    path: 'justificar-asistencia',
+    loadChildren: () => import('./justificar-asistencia/justificar-asistencia.module').then( m => m.JustificarAsistenciaPageModule)
+  },
 ];
 @NgModule({
   imports: [
