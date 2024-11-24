@@ -39,4 +39,9 @@ export class ViewUserPage implements OnInit {
   actualizarUsuario() {
     this.router.navigate(["/configuracion-perfil"]);
   }
+
+  logOut() {
+    sessionStorage.clear();
+    this.router.navigate(["/inicio"]);
+  }
 }

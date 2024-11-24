@@ -1,11 +1,17 @@
-Instalar json:
+Instalar json-server:
 
+```
 npm install -g json-server
+```
 
-Iniciar json:
+Iniciar json-server:
 
-json-server --watch info.json --host 0.0.0.0 --port 3000
+```
+json-server --watch datos/info.json --host 0.0.0.0 --port 3000
+```
 
-Qr:
+Instalar angularx-qrcode:
 
+```
 npm install angularx-qrcode --save
+```
