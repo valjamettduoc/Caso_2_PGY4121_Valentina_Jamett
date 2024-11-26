@@ -19,7 +19,7 @@ export class InicioPage implements OnInit {
   alumnodata: any;
 
   alumno = {
-    id: [],
+    id: "",
     rut: "",
     nombre: "",
     apellido: "",

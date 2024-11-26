@@ -27,9 +27,16 @@ export class AuthService {
     );
   }
 
-  GetUsuarioId(id: number): Observable<Alumno> {
+  GetUsuarioId(id: string): Observable<Alumno> {
     return this.httpclient.get<Alumno>(
       `${environment.apiUrl}/alumnos/?id=${id}`
+    );
+  }
+
+  actualizarEstudiante(estudiante: any): Observable<Alumno> {
+    return this.httpclient.put<Alumno>(
+      `${environment.apiUrl}/alumnos/${estudiante.id}`,
+      estudiante
     );
   }
 }
